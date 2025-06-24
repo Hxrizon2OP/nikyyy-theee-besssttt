@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Best Friend</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: url('harry-hermione.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-top: 0;
+      color: #fff;
+      text-shadow: 1px 1px 3px #000;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px #000;
+    }
+    p {
+      font-size: 1em;
+      padding: 0 10px;
+    }
+    .frame {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .frame img {
+      width: 45%;
+      max-width: 180px;
+      height: auto;
+      border: 5px solid #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .frame img:hover {
+      transform: scale(1.05);
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+    .buttons button {
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 2px solid #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 1em;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s ease;
+      width: 80%;
+      max-width: 250px;
+    }
+    .buttons button:hover {
+      background-color: rgba(255,255,255,0.4);
+    }
+    .content {
+      display: none;
+      margin-top: 20px;
+    }
+    video {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px auto;
+      border: 3px solid #fff;
+      border-radius: 10px;
+    }
+    .note {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px auto;
+      width: 90%;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <h2>Dear Nikyyy</h2>
+  <h1>This is for You, My Best Friend</h1>
+  <p>You’ve been my Hermione in this beautiful story, thank you for everything. ✨</p>
+
+  <div class="frame">
+    <img src="img1.jpg" alt="Memory 1"/>
+    <img src="img2.jpg" alt="Memory 2"/>
+    <img src="img3.jpg" alt="Memory 3"/>
+    <img src="img4.jpg" alt="Memory 4"/>
+  </div>
+
+  <div class="buttons">
+    <button onclick="showContent('videos')">Our Happy Moments</button>
+    <button onclick="showContent('note')">This One’s For You</button>
+  </div>
+
+  <div id="videos" class="content">
+    <video controls src="vid1.mp4"></video>
+    <video controls src="vid2.mp4"></video>
+  </div>
+
+  <div id="note" class="content note">
+    <p>
+      hello niky,
+      i just wanted to say im really grateful to have a friend like you and for all the efforts that you put in our bond.
+      I hope you stay happy, tension-free, and unbothered from attention seekers.
+      Stay the same just the way you are!
+      Happy nikyyyy gotta be my favourite genre💖
+      ~Your favourite student(ik im wrong) 
+    </p>
+  </div>
+
+  <script>
+    function showContent(id) {
+      document.getElementById("videos").style.display = "none";
+      document.getElementById("note").style.display = "none";
+      document.getElementById(id).style.display = "block";
+    }
+  </script>
+</body>
+</html>
